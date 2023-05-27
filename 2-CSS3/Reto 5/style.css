@@ -1,0 +1,14 @@
+:root {
+    font-size: 16px;
+}
+h1 {
+    font-size: 2rem;
+}
+main {
+    width: 1000px;
+}
+
+main, footer {
+    padding: 1em;
+}
+

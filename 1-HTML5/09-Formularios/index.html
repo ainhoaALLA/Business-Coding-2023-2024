@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+   
+<form action="/aaa" method="post">
+    <fieldset>
+     <legend>Datos Básicos</legend>
+     <label for="name-form">Introduce tu Nombre</label>
+         <input type="text" name="name-form" id="name-form">
+     <label for="age-form">Introduce tu Edad</label>
+         <input type="number" name="age-form" id="age-form" min="18">
+     <label for="age-form">Inroduce tu Fecha de nacimiento</label>
+        <input type="date" name="date-form" id="date-form">
+    </fieldset>
+<!-- Variante con placeholder -->
+    <fieldset>
+        <legend>Datos Básicos</legend>
+        <label for="name-form"> 
+            <input type="text" name="name-form" id="name-form" placeholder="Introuduce tu nombre">
+        </label>
+        <!-- Para cada input se necesita un label -->
+        <label for="age-form">
+            <input type="number" name="age-form" id="age-form" placeholder="Introuduce tu edad" min="18">
+        </label>
+        <label for="date-form">
+            <input type="date" name="date-form" id="date-form" placeholder="Introduce tu fecha de nacimiento">
+        </label>
+       <label for="pwd-form" >
+        <input type="password" name="pass" id="pass" placeholder="Introduce tu contraseña">
+       </label>
+       <label for="check-form">
+        <input type="checkbox" name="check" id="check">
+    </label>
+    </fieldset>
+  <button type="submit">Enviar</button>
+
+    </form>
+
+    <form action="/action.php" target="_blank" accept-charset="UTF-8">
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="/aaa" method="post" novalidate enctype="multipart/form-data">
+        <label for="formname">First Name</label>
+        <input type="text" id="formname" name="formname"><br><br>
+    </form>
+</body>
+</html>

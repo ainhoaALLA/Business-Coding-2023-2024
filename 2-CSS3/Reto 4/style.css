@@ -1,0 +1,8 @@
+section  p {
+    color: grey;
+    font-style: italic;
+}
+
+main > p {
+    color: blue;
+}

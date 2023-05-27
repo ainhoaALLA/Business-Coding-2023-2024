@@ -1,0 +1,40 @@
+.desplazamientoda {
+    margin: 16px;
+    padding-left: 34px;
+    width: 250px;
+    box-shadow: 10px 10px;
+}
+
+.desplazamientoia {
+    margin: 16px;
+    padding-left: 34px;
+    width: 250px;
+    box-shadow: -5px -5px;
+}
+
+.desenfoque1 {
+    box-shadow: 5px 5px 0;
+}
+
+.desenfoque2 {
+    box-shadow: 5px 5px 2px;
+}
+
+.desenfoque3 {
+    box-shadow: 5px 5px 10px;
+}
+
+.desenfoque4 {
+    box-shadow: 5px 5px 40px;
+}
+
+.crecimiento {
+    box-shadow: 0 0 10px 5px;
+}
+
+.shadow-example {
+    box-shadow: 10px 10px 5px black;
+    width: 500px;
+    margin: auto;
+    height: 100%;
+}

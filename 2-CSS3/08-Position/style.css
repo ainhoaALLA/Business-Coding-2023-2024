@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav {
+    position: fixed;
+    border: 2px solid red;
+    background-color: blanchedalmond;
+}
+header ul {
+    display: flex;
+    gap: 30px;
+    
+}
+
+nav a {
+
+	transition: 0.3s ease-in-out;
+    /* Este transition es para que el efecto del hover aparezca más progresivamente */
+}
+
+nav a:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+
+div {
+    width: 100px ;
+    height: 100px;
+}
+
+.relative {
+    position: relative;
+    left: 100px;
+    background-color: coral;
+}
+.absolute {
+    position: absolute;
+    left: 50px;
+    background-color: yellowgreen;
+}
+
+.contenedor {
+    height: 1000px;
+    width: 100%;
+    background-color: chocolate;
+}
+
+.box-one {
+    height: 150px;
+    width: 150px;
+    background-color: skyblue;
+    position: fixed;
+    margin: 0 auto;
+    top: 400px;
+    left: 200px;
+}
+
+.index-zero {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+}
+
+.index-zero > .index-primary {
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    opacity: 0.7;
+}
+
+.index-zero > .index-secondary {
+    position: absolute;
+    top: 20px;
+    z-index: 3;
+    width: 300px;
+    height: 300px;
+    background-color: teal;
+    opacity: 0.5;
+}
+
+
+/* margin: 0 auto; permite centrar el elemento */
+/* El Fixed se utiliza para barras de navegación */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiovisual</title>
+</head>
+<body>
+   <img src="./assets/IMG_20230406_172242.jpg" alt="matrimonio">
+   <!-- Si el link a la imagen está roto, alt muestra el mensaje que nos daría por defecto-->
+   <img src="aaaa" alt="matrimonio">
+   <!-- También se puede referenciar el url de donde la imagen está guardada -->
+   <img src="https://www.abogadoscea.es/images/blog/20/diferencia-entre-parejas-de-hecho-y-el-matrimonio.jpg" alt="matrimonio">
+<!-- Para darle un tamaño a la imgaen, se ponen los atributos siguientes de alto y ancho: -->
+   <img src="./assets/IMG_20230406_172242.jpg" alt="matrimonio" width="400" height="250">
+
+ <!-- La etiqueta Picture sirve para mostrar imágenes diferentes según el tamaño de la pantalla: -->
+<picture>
+    <source media="(min-width: 600px)" srcset="https://st4.depositphotos.com/13194036/21516/i/600/depositphotos_215162874-free-stock-photo-young-couple-sitting-vintage-motorbike.jpg">
+    <source media="(min-width: 450px)" srcset="https://bse.eu/sites/default/files/styles/bgse_image_square_medium/public/people/marsel_meeuwsen.jpg?itok=0GTXBdne">
+    <source media="(min-width: 300px)" srcset="https://st2.depositphotos.com/1823785/6445/i/600/depositphotos_64453065-stock-photo-close-up-of-label-with.jpg">
+    <img src="./assets/IMG_20230406_172242.jpg" alt="matrimonio" width="200" height="125">
+</picture>
+
+<!-- La etiqueta video sirve para mostrar videos. Los atributos son autoplay, controls (play, pause, stop), el tamaño determinado. Y finalmente, en src podemos referenciar nuestro video con un ./: -->
+<video src="./assets/VideoAsk— LeadGen — 02.mp4" autoplay="no" controls width="600"></video>
+
+<!-- La etiqueta audio es para mp3. Etiqueta preload y none es para que no los cargue hasta que el usuario no le de al play -->
+<audio src="./assets/16 Apr, 14.18_.aac" preload="none" controls></audio>
+
+<!-- La etiqueta iframe sirve para encapsular contenido e interactuar con ello, de una web o de una aplicación, por ejmeplo un video de youtube. El atributo Frameborder es para indicar si debe haber un border alrededor de nuestro iframe y otros atributos son también el ancho y el alto -->
+<iframe src="https://www.youtube.com/embed/vcV-N2gLPZc" frameborder="0" height="315" width="560"></iframe>
+
+
+<!-- La etiqueta map junto con img sirve para redireccionar a otra web cuando se clicka en un lugar determinado de la imagen -->
+<map name="infographic">
+    <area shape="poly" coords="130,147,200,107,254,219,130,228"
+     href="https://developer.mozzilla.org/docs/Web/HTML"
+     target="_blank" alt="HTML">
+</map>
+<img usemap="#infographic" src="./assets/Mapamundi-para-imprimir.jpg.webp" alt="MDN infographic">
+
+<map name="typeform">
+    <area shape="rect" coords="130,147,200,107,254,219,130,228"
+    href="https://www.typeform.com/"
+    target="_blank" alt="HTML" />
+   </map>
+   <img usemap="#typeform" src="./assets/70583068d772-Typeform_square_logo_white.jpg" alt="MDN typeform" />
+
+   <h1>The map and area elements</h1>
+
+   <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+   
+   <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+   
+   <map name="workmap">
+     <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://en.wikipedia.org/wiki/Computer">
+     <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://en.wikipedia.org/wiki/Telephone">
+     <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://en.wikipedia.org/wiki/Coffee">
+   </map>
+
+   <img src ="https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg" width="800" height="500" alt="Planets"
+usemap="#planetmap">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" href="https://solarviews.com/eng/sun.htm" alt="Sun">
+  <area shape="circle" coords="90,58,3" href="https://solarviews.com/eng/mercur.htm" alt="Mercury">
+  <area shape="circle" coords="124,58,8" href="https://solarviews.com/eng/venus.htm" alt="Venus">
+</map>
+
+</body>
+</html>

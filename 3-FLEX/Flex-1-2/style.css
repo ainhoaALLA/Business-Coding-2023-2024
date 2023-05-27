@@ -1,0 +1,24 @@
+* {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Flex flow hace lo mismo que las dos propiedades anteriores juntas flex-direction: y flex-wrap:  */
+    /* flex-flow: column wrap; */
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    /* gap: 10px; */
+
+}
+
+.items {
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+
+}
+

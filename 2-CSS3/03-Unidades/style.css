@@ -1,0 +1,54 @@
+/* Son tamaños absolutos, da igual el tamaño de la pantalla, la letra siempre va a ser igual. Por lo que son pocos usadas */
+
+.pulgadas {
+    font-size:0.5in ;
+}
+/* in significa pulgadas y son 2.54 cm */
+
+.centímetros {
+    font-size: 0.5cm;
+}
+
+.milímetros {
+    font-size: 0.5mm;
+}
+
+/* 1 punto es igual a 0.35 mm */
+.puntos {
+    font-size: 12pt;
+}
+
+/* 1 pica = 12pt = 4.23 mm */
+.picas {
+    font-size: 6pc;
+}
+
+
+.em {
+    font-size: 0.5em ;
+}
+
+.rem {
+    font-size: 0.5rem;
+}
+
+.pixel {
+    font-size: 12px;
+}
+
+div#contenido {
+    width: 500px;
+    background-color: aquamarine;
+}
+div.principal {
+    width: 60%;
+    background-color: blue;
+    color: bisque;
+}
+
+body {
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}

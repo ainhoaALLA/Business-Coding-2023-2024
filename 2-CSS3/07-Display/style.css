@@ -1,0 +1,32 @@
+/* Los div por defecto son block y los span son inline, 
+pero le podemos cambiar el coportamiento por defecto de esta forma: */
+
+.block {display: inline;}
+.inline {display: block;}
+
+
+
+.inline2 {
+    background-color: coral;
+    /* El display inline no permite definir el ancho del elemento, los block sí lo permiten */
+    /* display: block;
+    width: 200px; */
+}
+
+.block2 {
+    background-color: yellowgreen;
+    width: 60%;
+}
+
+/* display inline-block permite definir un ancho y poner los elemento en línea */
+.image {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+    border: 5px solid coral;
+    display: inline-block;
+
+}
+
+/* Display none oculta el elemento */

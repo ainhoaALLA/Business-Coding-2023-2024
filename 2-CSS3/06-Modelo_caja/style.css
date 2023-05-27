@@ -1,0 +1,21 @@
+.container-one {
+    width: 80%;
+    height: 100px;
+    background-color: coral;
+    padding: 50px;
+    margin: 20px 10px;
+    overflow-x: visible;
+}
+
+.content {
+    width: 500px;
+}
+
+/* margin es para dar margen a los cuatro lados en lugar de usar las etiquetas específicas, 
+se puede poner los 4 márgenes o sólo 2 y se aplicaría arriba y abajo y a izquierda y derecha (agujas del reloj)*/
+.container-two {
+    width: 60%;
+    height: 200px;
+    background-color: yellowgreen;
+    margin: 50px 30px;
+}

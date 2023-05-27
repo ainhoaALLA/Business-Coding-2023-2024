@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+<label for="identificador">Name</label>
+    <input type="text" id="identificador" size="70" value="Ainhoa" name="identificador">
+
+<label for="identif">Name2</label>
+    <input type="text" id="identif" value="Ainhoa" name="identif">
+
+<label for="formemail">Correo electrónico</label>
+    <input type="email" id="formemail" value="ainhoafr@hotmail.com" name="formemail">
+
+<label for="check">Políticas de Privacidad</label>
+    <input type="checkbox" id="check" name="check">
+
+<label for="cod">
+    <span>Código de Conducta</span>
+    <input type="checkbox" id="cod" name="cod">
+</label>
+
+<label for="subs">Suscribirme</label>
+    <input type="checkbox" id="subs" name="subs" checked>
+
+<label for="html_check">
+    <span>HTML</span>
+    <input type="checkbox" name="html_check" id="html_check" value="HTML">
+
+</label>
+
+<label for="css_check">CSS</label>
+    <input type="checkbox" name="css_check" id="css_check" value="CSS">
+
+<label for="music">
+    <span>Rock</span><input type="radio" name="music" id="music" value="Rock">
+    <span>Pop</span><input type="radio" name="music" id="music" value="Pop">
+</label>
+
+<label for="nombre">Nombre</label>
+<input type="radio" name="nombre" id="nombre" value="valor">
+
+<label for="nombre">Nombre</label>
+<input type="radio" name="nombre" id="nombre" value="valor" checked>
+
+<fieldset>
+    <legend>Opciones</legend>
+    <label for="Edad">Edad</label>
+    <input type="radio" id="menos18" value="menos18" name="edad"/>Menos de 18
+    <input type="radio" name="edad" id="18a30" value="18a30"/>18 a 30 
+    <input type="radio" name="edad" id="31a50" value="31a50"/>31 a 50 
+    <input type="radio" name="edad" id="mas50" value="mas50"/>Más de 50 
+
+</fieldset>
+
+<textarea name="Description" id="Desc" cols="50" rows="20"></textarea>
+
+<select name="select" id="select">
+    <option value="Rayo">Rayo Vallecano</option>
+    <option value="Betis">Real Betis</option>
+    <option value="St.Pauli">Sant Pauli</option>
+</select>
+
+<select name="city" id="city">
+    <optgroup label="Europe">
+        <option value="Madrid">Madrid</option>
+        <option value="Paris">Paris</option>
+        <option value="Roma">Roma</option>
+    </optgroup>
+    <optgroup label="Sudamérica">
+        <option value="Santiago">Santiago</option>
+        <option value="Sao Paulo">Sao Paulo</option>
+        <option value="Lima">Lima</option>
+    </optgroup>
+
+    <optgroup label="África">
+        <option value="Casablanca">Casablanca</option>
+        <option value="Ciudad del Cabo">Ciudad del Cabo</option>
+        <option value="Cairo">Cairo</option>
+    </optgroup>
+
+</select>
+
+<form action="aaaa" name="datalist" method="post">
+<!-- campo de texto combinado con lista de opciones -->
+<input type="text" list="items">
+<!-- Lista de opciones -->
+<datalist id="items">
+    <option value="1">Opción 1</option>
+    <option value="2">Opción 2</option>
+    <option value="2">Opción 3</option>
+    <option value="Other">Write your option here</option>
+</datalist>
+</form>
+
+<form action="aaa" method="post" name="files">
+    <label for="files">Select files:</label>
+    <input type="file" name="files" id="files" multiple>
+<!-- Selección de color -->
+    <input type="color" name="color" id="color" value="#FF0000">
+<!-- Barra de progreso -->
+    <progress max="100" value="10">Progreso</progress>
+<!-- Medidores -->
+<meter min="0" max="100"
+    low="25" high="75"
+    optimum="100" value="75">Medidor</meter>
+</form>
+
+<input type="button" value="ClickMe">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</body>
+</html>

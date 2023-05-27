@@ -1,0 +1,15 @@
+body {
+    color: blue;
+    background-color: coral;
+
+}
+
+div {
+    background-color: black;
+}
+
+div{
+    background-color: yellowgreen;
+}
+
+/* El nivel en cascada significa que el último que llega es que prevalece */

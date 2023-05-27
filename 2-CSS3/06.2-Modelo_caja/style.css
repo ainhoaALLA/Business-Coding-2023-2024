@@ -1,0 +1,38 @@
+p span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.overflow-visible {
+    height: 2em;
+    width: 12 em;
+    border: 3px dotted orange;
+    margin-bottom: 100px;
+    overflow: visible; 
+    /* dibuja barras si es necesario */
+}
+
+.overflow-hidden {
+    height: 2em;
+    width: 12 em;
+    border: 3px dotted orange;
+    overflow: hidden; 
+    /* No scroll */
+}
+
+.overflow-scroll {
+    height: 2em;
+    width: 12 em;
+    border: 3px dotted orange;
+    overflow: scroll; 
+    /* No scroll */
+}
+
+.overflow-auto {
+    height: 2em;
+    width: 12 em;
+    border: 3px dotted orange;
+    overflow: auto; 
+    /* No scroll */
+}
+
